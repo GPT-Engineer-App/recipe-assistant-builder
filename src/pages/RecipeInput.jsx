@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Input, Button, VStack, Text, Box, Image } from '@chakra-ui/react';
-import { ClarifaiStub, grpc } from 'clarifai-nodejs-grpc';
+import { ClarifaiStub, grpc } from 'clarifai';
 
 const stub = ClarifaiStub.grpc();
 
