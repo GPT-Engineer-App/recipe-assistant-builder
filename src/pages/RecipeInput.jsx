@@ -51,7 +51,7 @@ const RecipeInput = () => {
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
         <Text fontSize="2xl">Input Ingredients</Text>
-        <Input placeholder="Enter ingredients" value={ingredients} onChange={handleTextInput} />
+        <Input placeholder="Enter ingredients (comma separated)" value={ingredients} onChange={handleTextInput} />
         <Text fontSize="xl">Or</Text>
         <Input type="file" accept="image/*" onChange={handleImageUpload} />
         {image && <Image src={URL.createObjectURL(image)} alt="Uploaded ingredient" boxSize="200px" />}
